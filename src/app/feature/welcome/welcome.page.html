@@ -1,0 +1,55 @@
+<ion-header>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="container">
+    <ion-slides pager="true" [options]="slideOpts">
+      <ion-slide >
+        <div style="width: 100%;">
+          <img style="width: 60%; flex: 1 1 0%;" src="assets/images/Welcome1.jpg"/>
+          <div style="flex: 1 1 0%; padding-top: 16px; padding-bottom: 16px; display: inline-flex; flex-direction: column; align-items: center; justify-content: center;">
+              <p style="width: 70%;  font-size: 32px; font-weight: 700; line-height: 100%; text-align: center; color: rgba(24.98, 29.36, 32.94, 1);">¡Encuentra una cancha!</p>
+              <p style="width: 100%; font-size: 14px; line-height: 150%; text-align: center; color: rgba(100.65, 110.74, 119, 1);">¡Te ayudamos a encontrar el partido perfecto!</p>
+          </div>
+      </div>
+      </ion-slide>
+
+      <ion-slide>
+        <div style="width: 100%;">
+          <img style="width: 60%; flex: 1 1 0%;" src="assets/images/Welcome1.jpg"/>
+          <div style="flex: 1 1 0%; padding-top: 16px; padding-bottom: 16px; display: inline-flex; flex-direction: column; align-items: center; justify-content: center;">
+              <p style="width: 70%; font-size: 32px; font-weight: 700; line-height: 128%; text-align: center; color: rgba(24.98, 29.36, 32.94, 1);">¡Encuentra una cancha 2!</p>
+              <p style="width: 100%; font-size: 14px; line-height: 150%; text-align: center; color: rgba(100.65, 110.74, 119, 1);">¡Te ayudamos a encontrar el partido perfecto!</p>
+          </div>
+      </div>
+      </ion-slide>
+
+      <ion-slide>
+        <div style="width: 100%;">
+          <img style="width: 60%; flex: 1 1 0%;" src="assets/images/Welcome1.jpg"/>
+          <div style="flex: 1 1 0%; padding-top: 16px; padding-bottom: 16px; display: inline-flex; flex-direction: column; align-items: center; justify-content: center;">
+              <p style="width: 70%; font-size: 32px; font-weight: 700; line-height: 128%; text-align: center; color: rgba(24.98, 29.36, 32.94, 1);">¡Encuentra una cancha 3!</p>
+              <p style="width: 100%; font-size: 14px; line-height: 150%; text-align: center; color: rgba(100.65, 110.74, 119, 1);">¡Te ayudamos a encontrar el partido perfecto!</p>
+          </div>
+      </div>
+      </ion-slide>
+    </ion-slides>
+
+    <div class="buttonBottom">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6" >
+            <ion-button size="large" color="dark" fill="outline" expand="block" (click)="changeSlide()">Omitir</ion-button>
+          </ion-col>
+          <ion-col size="6" >
+            <ion-button size="large" color="dark" fill= "solid" expand="block" (click)="changeSlide()">Siguiente</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+
+
+
+</ion-content>
