@@ -1,7 +1,16 @@
 <ion-header>
-  
+
 </ion-header>
 
 <ion-content>
-  
+  <div class="ion-padding">
+
+    <ion-calendar
+       (change)="onChange($event)"
+       [(ngModel)]="date">
+    </ion-calendar>
+
+    <ion-button size="large" color="dark" fill= "solid" expand="block" (click)="next()">Siguiente</ion-button>
+
+  </div>
 </ion-content>

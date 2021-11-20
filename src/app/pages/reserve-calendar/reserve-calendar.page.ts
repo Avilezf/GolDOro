@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-reserve-calendar',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReserveCalendarPage implements OnInit {
 
-  constructor() { }
+  date: string;
+  type: 'string';
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+  onChange($event) {
+    console.log($event);
+  }
+
+  next(){
+    this.router.navigate(['/reserve-field']);
+  }
 }

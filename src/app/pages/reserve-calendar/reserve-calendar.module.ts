@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { ReserveCalendarPageRoutingModule } from './reserve-calendar-routing.module';
 
 import { ReserveCalendarPage } from './reserve-calendar.page';
+import { CalendarModule } from 'ion2-calendar';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ReserveCalendarPageRoutingModule
+    ReserveCalendarPageRoutingModule,
+    CalendarModule
   ],
   declarations: [ReserveCalendarPage]
 })

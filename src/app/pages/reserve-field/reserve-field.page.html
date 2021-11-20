@@ -3,5 +3,22 @@
 </ion-header>
 
 <ion-content>
+<div class="ion-padding">
+  <ion-label>Hola</ion-label>
+
+  <div style="width: 345px; height: 135.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(123, 97, 255, 1);" (click)="colors(0)" *ngIf="colores[0]"></div>
+  <div style="width: 345px; height: 135.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(248, 248, 248, 1);" (click)="colors(0)" *ngIf="!colores[0]"></div>
+
+  <div style="width: 345px; height: 135.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(123, 97, 255, 1);" (click)="colors(1)" *ngIf="colores[1]"></div>
+  <div style="width: 345px; height: 135.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(248, 248, 248, 1);" (click)="colors(1)" *ngIf="!colores[1]"></div>
+
+  <div style="width: 345px; height: 135.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(123, 97, 255, 1);" (click)="colors(2)" *ngIf="colores[2]"></div>
+  <div style="width: 345px; height: 135.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(248, 248, 248, 1);" (click)="colors(2)" *ngIf="!colores[2]"></div>
+
+  <ion-button size="large" color="dark" fill= "solid" expand="block" (click)="next()">Siguiente</ion-button>
+</div>
+
+
+
 
 </ion-content>

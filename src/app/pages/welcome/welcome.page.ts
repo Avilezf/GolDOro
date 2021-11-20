@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import { IonSlides } from '@ionic/angular';
 
 @Component({
@@ -15,7 +16,7 @@ export class WelcomePage implements OnInit {
     speed: 400
   };
 
-  constructor() {
+  constructor(private router: Router) {
 
   }
 
@@ -25,7 +26,7 @@ export class WelcomePage implements OnInit {
 
   async changeSlide(){
     if( await this.slides.getActiveIndex() === 2){
-      console.log('login');
+      this.router.navigate(['/login']);
     }else{
       this.slides.slideNext();
     }
