@@ -16,14 +16,174 @@
 </div>
 
 
-  <div style="width: 100%; height: 135.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(123, 97, 255, 1);" (click)="colors(0)" *ngIf="colores[0]"></div>
-  <div style="width: 100%; height: 135.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(248, 248, 248, 1);" (click)="colors(0)" *ngIf="!colores[0]"></div>
+  <div style="width: 100%; height: 145.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(123, 97, 255, 1);" (click)="colors(0)" *ngIf="colores[0]">
+    <div class="ion-padding" style="padding-top:0px;">
+      <div>
+        <h2 style="float:left; position:relative;" ><b>Cancha #1</b></h2>
+        <h2 style="float:right;" ><b>{{total}}</b></h2>
+      </div>
 
-  <div style="width: 100%; height: 135.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(123, 97, 255, 1);" (click)="colors(1)" *ngIf="colores[1]"></div>
-  <div style="width: 100%; height: 135.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(248, 248, 248, 1);" (click)="colors(1)" *ngIf="!colores[1]"></div>
+      <div style="padding-top: 57px;">
+        <h4 style="margin-top: 0px; margin-bottom: 10px"><b>Disponible</b></h4>
+        <ion-badge style="margin-right: 8px;" color="tertiary" (click)="badge1(0)" *ngIf="bandas1[0]" >7:30 - 8:30</ion-badge>
+        <ion-badge style="margin-right: 8px;" color="medium" (click)="badge1(0)" *ngIf="!bandas1[0]" >7:30 - 8:30</ion-badge>
 
-  <div style="width: 100%; height: 135.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(123, 97, 255, 1);" (click)="colors(2)" *ngIf="colores[2]"></div>
-  <div style="width: 100%; height: 135.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(248, 248, 248, 1);" (click)="colors(2)" *ngIf="!colores[2]"></div>
+        <ion-badge style="margin-right: 8px;" color="tertiary" (click)="badge1(1)" *ngIf="bandas1[1]" >8:30 - 9:30</ion-badge>
+        <ion-badge style="margin-right: 8px;" color="medium" (click)="badge1(1)" *ngIf="!bandas1[1]" >8:30 - 9:30</ion-badge>
+
+        <ion-badge style="margin-right: 8px;" color="tertiary" (click)="badge1(2)" *ngIf="bandas1[2]">10:30 - 11:30</ion-badge>
+        <ion-badge style="margin-right: 8px;" color="medium" (click)="badge1(2)" *ngIf="!bandas1[2]">10:30 - 11:30</ion-badge>
+
+        <ion-badge style="margin-right: 8px;" color="tertiary" (click)="badge1(3)" *ngIf="bandas1[3]">12:30 - 1:30</ion-badge>
+        <ion-badge style="margin-right: 8px;" color="medium" (click)="badge1(3)" *ngIf="!bandas1[3]">12:30 - 1:30</ion-badge>
+        <br>
+        <ion-badge style="margin-right: 8px;" color="tertiary" (click)="badge1(4)" *ngIf="bandas1[4]">2:30 - 3:30</ion-badge>
+        <ion-badge style="margin-right: 8px;" color="medium" (click)="badge1(4)" *ngIf="!bandas1[4]">2:30 - 3:30</ion-badge>
+
+        <ion-badge style="margin-right: 8px;" color="tertiary" (click)="badge1(5)" *ngIf="bandas1[5]">4:30 - 5:30</ion-badge>
+        <ion-badge style="margin-right: 8px;" color="medium" (click)="badge1(5)" *ngIf="!bandas1[5]">4:30 - 5:30</ion-badge>
+
+        <ion-badge style="margin-right: 8px;" color="tertiary" (click)="badge1(6)" *ngIf="bandas1[6]">6:30 - 7:30</ion-badge>
+        <ion-badge style="margin-right: 8px;" color="medium" (click)="badge1(6)" *ngIf="!bandas1[6]">6:30 - 7:30</ion-badge>
+
+        <ion-badge style="margin-right: 8px;" color="tertiary" (click)="badge1(7)" *ngIf="bandas1[7]">8:30 - 9:30</ion-badge>
+        <ion-badge style="margin-right: 8px;" color="medium" (click)="badge1(7)" *ngIf="!bandas1[7]">8:30 - 9:30</ion-badge>
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+  <div style="width: 100%; height: 145.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(248, 248, 248, 1);" (click)="colors(0)" *ngIf="!colores[0]">
+    <div class="ion-padding" style="padding-top:0px;">
+      <h2><b>Cancha #1</b></h2>
+      <h4 style="margin-top: 0px; margin-bottom: 10px"><b>Disponible</b></h4>
+      <ion-badge style="margin-right: 8px;" color="medium">7:30 - 8:30</ion-badge>
+      <ion-badge style="margin-right: 8px;" color="medium">8:30 - 9:30</ion-badge>
+      <ion-badge style="margin-right: 8px;" color="medium">10:30 - 11:30</ion-badge>
+      <ion-badge style="margin-right: 8px;" color="medium">12:30 - 1:30</ion-badge>
+      <br>
+      <ion-badge style="margin-right: 8px;" color="medium">2:30 - 3:30</ion-badge>
+      <ion-badge style="margin-right: 8px;" color="medium">4:30 - 5:30</ion-badge>
+      <ion-badge style="margin-right: 8px;" color="medium">6:30 - 7:30</ion-badge>
+      <ion-badge style="margin-right: 8px;" color="medium">8:30 - 9:30</ion-badge>
+    </div>
+
+  </div>
+
+  <div style="width: 100%; height: 145.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(123, 97, 255, 1);" (click)="colors(1)" *ngIf="colores[1]">
+    <div class="ion-padding" style="padding-top:0px;">
+      <div>
+        <h2 style="float:left; position:relative;" ><b>Cancha #2</b></h2>
+        <h2 style="float:right;"><b>$52.000</b></h2>
+      </div>
+
+      <div style="padding-top: 57px;">
+        <h4 style="margin-top: 0px; margin-bottom: 10px"><b>Disponible</b></h4>
+        <ion-badge style="margin-right: 8px;" color="tertiary" (click)="badge2(0)" *ngIf="bandas2[0]" >7:30 - 8:30</ion-badge>
+        <ion-badge style="margin-right: 8px;" color="medium" (click)="badge2(0)" *ngIf="!bandas2[0]" >7:30 - 8:30</ion-badge>
+
+
+        <ion-badge style="margin-right: 8px;" color="danger" (click)="noAvalible()" >8:30 - 9:30</ion-badge>
+
+
+        <ion-badge style="margin-right: 8px;" color="danger" (click)="noAvalible()">10:30 - 11:30</ion-badge>
+
+        <ion-badge style="margin-right: 8px;" color="tertiary" (click)="badge2(3)" *ngIf="bandas2[3]">12:30 - 1:30</ion-badge>
+        <ion-badge style="margin-right: 8px;" color="medium" (click)="badge2(3)" *ngIf="!bandas2[3]">12:30 - 1:30</ion-badge>
+        <br>
+        <ion-badge style="margin-right: 8px;" color="tertiary" (click)="badge2(4)" *ngIf="bandas2[4]">2:30 - 3:30</ion-badge>
+        <ion-badge style="margin-right: 8px;" color="medium" (click)="badge2(4)" *ngIf="!bandas2[4]">2:30 - 3:30</ion-badge>
+
+        <ion-badge style="margin-right: 8px;" color="tertiary" (click)="badge2(5)" *ngIf="bandas2[5]">4:30 - 5:30</ion-badge>
+        <ion-badge style="margin-right: 8px;" color="medium" (click)="badge2(5)" *ngIf="!bandas2[5]">4:30 - 5:30</ion-badge>
+
+        <ion-badge style="margin-right: 8px;" color="tertiary" (click)="badge2(6)" *ngIf="bandas2[6]">6:30 - 7:30</ion-badge>
+        <ion-badge style="margin-right: 8px;" color="medium" (click)="badge2(6)" *ngIf="!bandas2[6]">6:30 - 7:30</ion-badge>
+
+        <ion-badge style="margin-right: 8px;" color="tertiary" (click)="badge2(7)" *ngIf="bandas2[7]">8:30 - 9:30</ion-badge>
+        <ion-badge style="margin-right: 8px;" color="medium" (click)="badge2(7)" *ngIf="!bandas2[7]">8:30 - 9:30</ion-badge>
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+  <div style="width: 100%; height: 145.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(248, 248, 248, 1);" (click)="colors(1)" *ngIf="!colores[1]">
+    <div class="ion-padding" style="padding-top:0px;">
+      <h2><b>Cancha #2</b></h2>
+      <h4 style="margin-top: 0px; margin-bottom: 10px"><b>Disponible</b></h4>
+      <ion-badge style="margin-right: 8px;" color="medium">7:30 - 8:30</ion-badge>
+      <ion-badge style="margin-right: 8px;" color="danger">8:30 - 9:30</ion-badge>
+      <ion-badge style="margin-right: 8px;" color="danger">10:30 - 11:30</ion-badge>
+      <ion-badge style="margin-right: 8px;" color="medium">12:30 - 1:30</ion-badge>
+      <br>
+      <ion-badge style="margin-right: 8px;" color="medium">2:30 - 3:30</ion-badge>
+      <ion-badge style="margin-right: 8px;" color="medium">4:30 - 5:30</ion-badge>
+      <ion-badge style="margin-right: 8px;" color="medium">6:30 - 7:30</ion-badge>
+      <ion-badge style="margin-right: 8px;" color="medium">8:30 - 9:30</ion-badge>
+    </div>
+
+  </div><div style="width: 100%; height: 145.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(123, 97, 255, 1);" (click)="colors(2)" *ngIf="colores[2]">
+    <div class="ion-padding" style="padding-top:0px;">
+      <div>
+        <h2 style="float:left; position:relative;" ><b>Cancha #3</b></h2>
+        <h2 style="float:right;"><b>$52.000</b></h2>
+      </div>
+
+      <div style="padding-top: 57px;">
+        <h4 style="margin-top: 0px; margin-bottom: 10px"><b>Disponible</b></h4>
+        <ion-badge style="margin-right: 8px;" color="tertiary" (click)="badge3(0)" *ngIf="bandas3[0]" >7:30 - 8:30</ion-badge>
+        <ion-badge style="margin-right: 8px;" color="medium" (click)="badge3(0)" *ngIf="!bandas3[0]" >7:30 - 8:30</ion-badge>
+
+        <ion-badge style="margin-right: 8px;" color="tertiary" (click)="badge3(1)" *ngIf="bandas3[1]" >8:30 - 9:30</ion-badge>
+        <ion-badge style="margin-right: 8px;" color="medium" (click)="badge3(1)" *ngIf="!bandas3[1]" >8:30 - 9:30</ion-badge>
+
+        <ion-badge style="margin-right: 8px;" color="tertiary" (click)="badge3(2)" *ngIf="bandas3[2]">10:30 - 11:30</ion-badge>
+        <ion-badge style="margin-right: 8px;" color="medium" (click)="badge3(2)" *ngIf="!bandas3[2]">10:30 - 11:30</ion-badge>
+
+        <ion-badge style="margin-right: 8px;" color="tertiary" (click)="badge3(3)" *ngIf="bandas3[3]">12:30 - 1:30</ion-badge>
+        <ion-badge style="margin-right: 8px;" color="medium" (click)="badge3(3)" *ngIf="!bandas3[3]">12:30 - 1:30</ion-badge>
+        <br>
+        <ion-badge style="margin-right: 8px;" color="tertiary" (click)="badge3(4)" *ngIf="bandas3[4]">2:30 - 3:30</ion-badge>
+        <ion-badge style="margin-right: 8px;" color="medium" (click)="badge3(4)" *ngIf="!bandas3[4]">2:30 - 3:30</ion-badge>
+
+        <ion-badge style="margin-right: 8px;" color="tertiary" (click)="badge3(5)" *ngIf="bandas3[5]">4:30 - 5:30</ion-badge>
+        <ion-badge style="margin-right: 8px;" color="medium" (click)="badge3(5)" *ngIf="!bandas3[5]">4:30 - 5:30</ion-badge>
+
+        <ion-badge style="margin-right: 8px;" color="danger" (click)="noAvalible()">6:30 - 7:30</ion-badge>
+
+        <ion-badge style="margin-right: 8px;" color="danger" (click)="noAvalible()">8:30 - 9:30</ion-badge>
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+  <div style="width: 100%; height: 145.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(248, 248, 248, 1);" (click)="colors(2)" *ngIf="!colores[2]">
+    <div class="ion-padding" style="padding-top:0px;">
+      <h2><b>Cancha #3</b></h2>
+      <h4 style="margin-top: 0px; margin-bottom: 10px"><b>Disponible</b></h4>
+      <ion-badge style="margin-right: 8px;" color="medium">7:30 - 8:30</ion-badge>
+      <ion-badge style="margin-right: 8px;" color="medium">8:30 - 9:30</ion-badge>
+      <ion-badge style="margin-right: 8px;" color="medium">10:30 - 11:30</ion-badge>
+      <ion-badge style="margin-right: 8px;" color="medium">12:30 - 1:30</ion-badge>
+      <br>
+      <ion-badge style="margin-right: 8px;" color="medium">2:30 - 3:30</ion-badge>
+      <ion-badge style="margin-right: 8px;" color="medium">4:30 - 5:30</ion-badge>
+      <ion-badge style="margin-right: 8px;" color="danger">6:30 - 7:30</ion-badge>
+      <ion-badge style="margin-right: 8px;" color="danger">8:30 - 9:30</ion-badge>
+    </div>
+
+  </div>
+
+
 
   <ion-button size="large" color="dark" fill= "solid" expand="block" (click)="next()">Siguiente</ion-button>
 </div>
