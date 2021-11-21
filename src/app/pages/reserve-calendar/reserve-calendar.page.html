@@ -5,12 +5,33 @@
 <ion-content>
   <div class="ion-padding">
 
-    <ion-calendar
-       (change)="onChange($event)"
-       [(ngModel)]="date">
-    </ion-calendar>
+    <div class="center"  style="margin-bottom:0%; padding-bottom: 0px; ">
+        <h3><b>Zoccer Plaza</b></h3>
+    </div>
+    <div class="center" style="margin-top:0%; padding-top: 0px; ">
+      <p style="margin-top:0%;">305-564-9862</p>
+    </div>
 
-    <ion-button size="large" color="dark" fill= "solid" expand="block" (click)="next()">Siguiente</ion-button>
+    <ion-card>
+      <div class="ion-padding" style="margin-top:20px; margin-bottom:0px; font-size: 14px;">
+        <p style="margin-top:0px; margin-bottom:0px; margin-left:10px">Selecciona el día que quieras reservar: </p>
+
+      </div>
+
+
+      <ion-calendar
+         (change)="onChange($event)"
+         [(ngModel)]="date">
+      </ion-calendar>
+
+
+    </ion-card>
+
+    <div style="margin-top:100px; margin-bottom:10px">
+      <ion-button size="large" color="dark" fill= "solid" expand="block" (click)="next()">Siguiente</ion-button>
+    </div>
+
+
 
   </div>
 </ion-content>

@@ -17,4 +17,8 @@ export class ListFieldPage implements OnInit {
     this.router.navigate(['/info-field']);
   }
 
+  profile(){
+    this.router.navigate(['/profile']);
+  }
+
 }

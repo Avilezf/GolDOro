@@ -3,37 +3,41 @@
 </ion-header>
 
 <ion-content>
-  <div style="width: 375px; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; display: inline-flex; flex-direction: column; align-items: flex-start; justify-content: flex-start;">
-    <div style="width: 100%; padding: 8px; background-color: rgba(232.16, 238.29, 243.31, 1); border-radius: 8px; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start;">
-        <img style="width: 100%; height: 264px;" src="https://via.placeholder.com/327x264"/>
+  <div style="width: 100%; padding-left: 0%; padding-right: 0%; padding-top: 0px; padding-bottom: 8px; display: inline-flex; flex-direction: column; align-items: flex-start; justify-content: flex-start;">
+    <div style="width: 100%; padding: 0%; background-color: rgba(232.16, 238.29, 243.31, 1); border-radius: 8px; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start;">
+        <img style="width: 100%; height: 264px; border-radius: 8px;" src="assets/images/zoccerPlaza/zoccerBack.jpg"/>
     </div>
 
-    <div style="width: 100%; padding-left: 16px; padding-right: 16px; padding-bottom: 8px; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <div style="width: 100%; padding-left: 5%; padding-right: 16px; padding-bottom: 8px; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
         <div style="width: 100%; padding-top: 8px; padding-bottom: 8px; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start;">
-            <p style="width: 100%; font-size: 32px; font-weight: 700; line-height: 128%; color: rgba(24.98, 29.36, 32.94, 1);">Zoccer Plaza</p>
+            <p style="width: 100%; margin-bottom: 0px; font-size: 32px; font-weight: 700; line-height: 128%; color: rgba(24.98, 29.36, 32.94, 1);">Zoccer Plaza</p>
 
             <div style="padding-top: 8px; padding-bottom: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
                 <div style="display: inline-flex; flex-direction: row; align-items: center; justify-content: flex-start;">
-                    <img style="width: 24px; height: 24px; border-radius: 8px;" src="https://via.placeholder.com/24x24"/>
+                  <ion-icon style="font-size: 25px;" name="location" slot="start" ></ion-icon>
 
-                    <p style="font-size: 14px; line-height: 150%; color: rgba(24.98, 29.36, 32.94, 1);">Cl. 77 # 58 - 53</p>
+                  <p style="font-size: 14px; margin-bottom: 0px; line-height: 150%; color: rgba(24.98, 29.36, 32.94, 1);">&nbsp; Cl. 77 # 58 - 53</p>
+
                 </div>
 
-                <div style="display: inline-flex; flex-direction: row; align-items: center; justify-content: flex-start;">
-                    <img style="width: 24px; height: 24px; border-radius: 8px;" src="https://via.placeholder.com/24x24"/>
+                <div style="margin-bottom: 0px; display: inline-flex; flex-direction: row; align-items: center; justify-content: flex-start;">
+                  <ion-icon style="font-size: 25px;"  name="call" slot="start"></ion-icon>
 
-                    <p style="font-size: 14px; line-height: 150%; color: rgba(24.98, 29.36, 32.94, 1);">301 3790228</p>
+                  <p style="font-size: 16px; margin-bottom: 0px; line-height: 150%; color: rgba(24.98, 29.36, 32.94, 1);">&nbsp; 301 3790228</p>
                 </div>
             </div>
 
-            <p style="width: 100%; font-size: 14px; line-height: 150%; color: rgba(100.65, 110.74, 119, 1);"><br/>Disfruta de la cancha sintética mas extrema de Barranquilla, comodos parqueaderos y terraza bar para vivir toda la energía del fútbol! Mas que una pasión, es una adicción!<br/><br/><br/><br/></p>
+            <p style="margin-top: 0px; margin-bottom: 0px; padding-top: 1px; width: 100%; font-size: 14px; line-height: 150%; color: rgba(100.65, 110.74, 119, 1);"><br/>Disfruta de la cancha sintética mas extrema de Barranquilla, comodos parqueaderos y terraza bar para vivir toda la energía del fútbol! Mas que una pasión, es una adicción!<br/><br/><br/><br/></p>
         </div>
     </div>
 </div>
 
 <div class="ion-padding">
   <ion-button size="large" color="dark" fill= "solid" expand="block" (click)="start()">Empieza la reserva</ion-button>
-  <p style="font-size: 12px; line-height: 16px; color: black; margin-left: 33%; justify-content: center;">Chatea con nosotros</p>
+  <div style="width: 100%; justify-content: center; padding-left: 30%; padding-right: 20%;">
+    <p style="font-size: 12px; line-height: 16px; color: black; justify-content: center;"><ion-icon style="font-size: 20px;"  name="chatbox" slot="start"></ion-icon> &nbsp; Chatea con nosotros</p>
+  </div>
+
 </div>
 
 

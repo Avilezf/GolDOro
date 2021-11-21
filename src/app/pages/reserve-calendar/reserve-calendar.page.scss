@@ -1,0 +1,13 @@
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  justify-content: center !important;
+  justify-items: center;
+  align-items: center;
+  display: flex;
+
+  h3 {
+    margin-left: 15px;
+  }
+}

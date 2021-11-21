@@ -4,16 +4,26 @@
 
 <ion-content>
 <div class="ion-padding">
-  <ion-label>Hola</ion-label>
+  <div class="center">
+    <h3><b>Zoccer Plaza</b></h3>
+  </div>
+  <div class="center">
+    <p style="margin-top:0px;">305-564-9862</p>
+  </div>
+<div class="ion-padding"  style="margin-top:0px; margin-bottom:0px; font-size: 14px;">
+  <p style="margin-top:0px; margin-bottom:0px; margin-left:20px">Selecciona el día que quieras reservar: </p>
 
-  <div style="width: 345px; height: 135.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(123, 97, 255, 1);" (click)="colors(0)" *ngIf="colores[0]"></div>
-  <div style="width: 345px; height: 135.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(248, 248, 248, 1);" (click)="colors(0)" *ngIf="!colores[0]"></div>
+</div>
 
-  <div style="width: 345px; height: 135.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(123, 97, 255, 1);" (click)="colors(1)" *ngIf="colores[1]"></div>
-  <div style="width: 345px; height: 135.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(248, 248, 248, 1);" (click)="colors(1)" *ngIf="!colores[1]"></div>
 
-  <div style="width: 345px; height: 135.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(123, 97, 255, 1);" (click)="colors(2)" *ngIf="colores[2]"></div>
-  <div style="width: 345px; height: 135.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(248, 248, 248, 1);" (click)="colors(2)" *ngIf="!colores[2]"></div>
+  <div style="width: 100%; height: 135.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(123, 97, 255, 1);" (click)="colors(0)" *ngIf="colores[0]"></div>
+  <div style="width: 100%; height: 135.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(248, 248, 248, 1);" (click)="colors(0)" *ngIf="!colores[0]"></div>
+
+  <div style="width: 100%; height: 135.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(123, 97, 255, 1);" (click)="colors(1)" *ngIf="colores[1]"></div>
+  <div style="width: 100%; height: 135.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(248, 248, 248, 1);" (click)="colors(1)" *ngIf="!colores[1]"></div>
+
+  <div style="width: 100%; height: 135.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(123, 97, 255, 1);" (click)="colors(2)" *ngIf="colores[2]"></div>
+  <div style="width: 100%; height: 135.59px; margin-bottom: 3%; background-color: rgba(248, 248, 248, 1); border-radius: 9px; border-style: solid; border-width: 3px; border-style: solid; border-color: rgba(248, 248, 248, 1);" (click)="colors(2)" *ngIf="!colores[2]"></div>
 
   <ion-button size="large" color="dark" fill= "solid" expand="block" (click)="next()">Siguiente</ion-button>
 </div>
