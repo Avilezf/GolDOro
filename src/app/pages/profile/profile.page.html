@@ -3,7 +3,63 @@
 </ion-header>
 
 <ion-content>
+  <ion-grid>
+    <ion-row class="ion-padding" style="justify-content: center !important;">
+      <ion-col>
+        <div class="center">
+          <ion-avatar>
+            <img
+              src="https://image.freepik.com/vector-gratis/vector-avatar-sonriente-hombre-expresion-facial_102172-203.jpg" />
+          </ion-avatar>
+        </div>
+      </ion-col>
+    </ion-row>
 
+    <ion-row>
+      <ion-col>
+        <h1>Luis Carlos Imitola Nieto</h1>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-card style="border-radius: 20px; color: lightgray;">
+        <ion-card-header>
+          <p style="color: darkgray; font-size: 12px;">Mi Perfil</p>
+        </ion-card-header>
+
+        <ion-card-content>
+          <ion-list>
+            <ion-item (click)="noAvalible()">
+              <ion-icon slot="start" name="book" style="color:rgb(25, 143, 206);"></ion-icon>
+              <ion-label>Mis Reservas</ion-label>
+              <ion-icon name="arrow-forward" item-end style="color: black;"></ion-icon>
+            </ion-item>
+
+            <ion-item (click)="noAvalible()">
+              <ion-icon slot="start" name="people" style="color:rgb(25, 143, 206);"></ion-icon>
+              <ion-label>Mis Amigos </ion-label>
+              <ion-icon name="arrow-forward" item-end style="color: black;"></ion-icon>
+            </ion-item>
+
+            <ion-item (click)="noAvalible()">
+              <ion-icon slot="start" name="cog" style="color:rgb(25, 143, 206);"></ion-icon>
+              <ion-label>Configuración</ion-label>
+              <ion-icon name="arrow-forward" item-end style="color: black;"></ion-icon>
+            </ion-item>
+
+            <ion-item (click)="login()">
+              <ion-icon slot="start" name="exit" style="color:rgb(206, 25, 25);"></ion-icon>
+              <ion-label>Salir</ion-label>
+              <ion-icon name="arrow-forward" item-end style="color: black;"></ion-icon>
+            </ion-item>
+
+          </ion-list>
+
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+
+  </ion-grid>
 
 
 </ion-content>

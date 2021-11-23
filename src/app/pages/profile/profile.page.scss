@@ -1,0 +1,35 @@
+h1 {
+  text-align: center;
+}
+
+ion-avatar {
+  height: 120px;
+  width: 120px;
+
+}
+
+ion-icon {
+  font-size: 25px !important;
+}
+
+ion-label {
+  font-size: 16px !important;
+  font-family: serif;
+}
+
+ion-badge {
+  color: var(--ion-color-primary-contrast);
+}
+
+ion-card {
+  width: 1080px !important;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  //border: 3px solid green;
+  padding: 10px;
+  text-align: center;
+
+}
